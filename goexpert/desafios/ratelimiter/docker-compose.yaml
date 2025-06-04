@@ -28,7 +28,7 @@ services:
       context: .
       dockerfile: Dockerfile
       tags:
-        - OsvaldoTCF/pgFCycle/goexpert/desafio-ratelimiter:v1
+        - goexpert/desafio-ratelimiter:v1
     ports:
       - "8080:8080"
     networks:
