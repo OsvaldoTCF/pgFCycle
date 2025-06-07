@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-observabilidade/input-api/internal/entity"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-observabilidade/input-api/internal/entity"
 )
 
 type ValidateCEPInputDTO struct {

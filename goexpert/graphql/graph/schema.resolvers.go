@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/graphql/graph/model"
+	"github.com/osvaldotcf/pgfcycle/goexpert/graphql/graph/model"
 )
 
 // CreateCategory is the resolver for the createCategory field.

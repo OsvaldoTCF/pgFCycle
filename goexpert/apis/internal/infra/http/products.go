@@ -6,10 +6,10 @@ import (
 	"strconv"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/apis/internal/dto"
-	entity "github.com/OsvaldoTCF/pgFCycle/goexpert/apis/internal/entities"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/apis/internal/infra/database"
-	pkg "github.com/OsvaldoTCF/pgFCycle/goexpert/apis/pkg/entities"
+	"github.com/osvaldotcf/pgfcycle/goexpert/apis/internal/dto"
+	entity "github.com/osvaldotcf/pgfcycle/goexpert/apis/internal/entities"
+	"github.com/osvaldotcf/pgfcycle/goexpert/apis/internal/infra/database"
+	pkg "github.com/osvaldotcf/pgfcycle/goexpert/apis/pkg/entities"
 )
 
 type ProductHanlder struct {

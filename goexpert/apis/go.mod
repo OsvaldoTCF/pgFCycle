@@ -1,4 +1,4 @@
-module github.com/OsvaldoTCF/pgFCycle/goexpert/apis
+module github.com/osvaldotcf/pgfcycle/goexpert/apis
 
 go 1.22.3
 

@@ -1,4 +1,4 @@
-module github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-observabilidade
+module github.com/osvaldotcf/pgfcycle/goexpert/desafio-observabilidade
 
 go 1.22.3
 

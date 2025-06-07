@@ -3,9 +3,9 @@ package usecase_test
 import (
 	"testing"
 
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run/internal/entity"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run/internal/infra/web"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run/internal/usecase"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafios/cloud-run/internal/entity"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafios/cloud-run/internal/infra/web"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafios/cloud-run/internal/usecase"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

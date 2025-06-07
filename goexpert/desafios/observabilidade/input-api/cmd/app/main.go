@@ -8,10 +8,10 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-observabilidade/configs"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-observabilidade/input-api/internal/infra/web"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-observabilidade/input-api/internal/infra/web/webserver"
-	otel_provider "github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-observabilidade/pkg/otel"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-observabilidade/configs"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-observabilidade/input-api/internal/infra/web"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-observabilidade/input-api/internal/infra/web/webserver"
+	otel_provider "github.com/osvaldotcf/pgfcycle/goexpert/desafio-observabilidade/pkg/otel"
 	"github.com/spf13/viper"
 	"go.opentelemetry.io/otel"
 )

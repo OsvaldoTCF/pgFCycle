@@ -2,7 +2,7 @@ package router
 
 import (
 	"github.com/go-chi/chi"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-ratelimiter/handler"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-ratelimiter/handler"
 )
 
 func InitializeRoutes(router *chi.Mux) {

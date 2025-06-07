@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run/internal/entity"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafios/cloud-run/internal/entity"
 	"github.com/stretchr/testify/assert"
 )
 

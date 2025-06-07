@@ -3,7 +3,7 @@ package router
 import (
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-ratelimiter/limiter"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-ratelimiter/limiter"
 )
 
 func InitializeMiddlewares(router *chi.Mux, limiter *limiter.RateLimiter) {

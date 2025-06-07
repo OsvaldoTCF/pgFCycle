@@ -1,4 +1,4 @@
-module github.com/OsvaldoTCF/pgFCycle/goexpert/testing
+module github.com/osvaldotcf/pgfcycle/goexpert/testing
 
 go 1.22.3
 

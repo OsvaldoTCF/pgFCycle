@@ -1,4 +1,4 @@
-module github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-multithreading
+module github.com/osvaldotcf/pgfcycle/goexpert/desafio-multithreading
 
 go 1.22.3
 

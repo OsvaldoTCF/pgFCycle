@@ -3,7 +3,7 @@ package repo
 import (
 	"time"
 
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-stress-test/internal/entity"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-stress-test/internal/entity"
 )
 
 type ReportRespository struct{}

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-stress-test/internal/infra/cli"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-stress-test/internal/infra/cli"
 )
 
 func main() {

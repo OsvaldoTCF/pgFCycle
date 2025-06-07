@@ -3,8 +3,8 @@ package entity
 import (
 	"time"
 
-	err "github.com/OsvaldoTCF/pgFCycle/goexpert/apis/internal/errors"
-	entity "github.com/OsvaldoTCF/pgFCycle/goexpert/apis/pkg/entities"
+	err "github.com/osvaldotcf/pgfcycle/goexpert/apis/internal/errors"
+	entity "github.com/osvaldotcf/pgfcycle/goexpert/apis/pkg/entities"
 )
 
 type Product struct {

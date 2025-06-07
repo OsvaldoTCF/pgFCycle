@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-observabilidade/orchestrator-api/internal/entity"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-observabilidade/orchestrator-api/internal/entity"
 )
 
 type WeatherInputDTO struct {

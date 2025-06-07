@@ -1,4 +1,4 @@
-version: "3"
+version: "3.6"
 
 services:
   app:
@@ -8,7 +8,7 @@ services:
       context: .
       dockerfile: Dockerfile
       tags:
-        - gcr.io/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run:v1
+        - us-east1-docker.pkg.dev/goexpert-462214/desafios/cloud-run:v1
     env_file:
       - ./.env
     ports:

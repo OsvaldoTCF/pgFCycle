@@ -1,7 +1,7 @@
 package database
 
 import (
-	entity "github.com/OsvaldoTCF/pgFCycle/goexpert/apis/internal/entities"
+	entity "github.com/osvaldotcf/pgfcycle/goexpert/apis/internal/entities"
 	"gorm.io/gorm"
 )
 

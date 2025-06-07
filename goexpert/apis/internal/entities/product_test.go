@@ -3,7 +3,7 @@ package entity
 import (
 	"testing"
 
-	error "github.com/OsvaldoTCF/pgFCycle/goexpert/apis/internal/errors"
+	error "github.com/osvaldotcf/pgfcycle/goexpert/apis/internal/errors"
 	"github.com/stretchr/testify/assert"
 )
 

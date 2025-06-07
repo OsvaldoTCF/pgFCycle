@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-observabilidade/orchestrator-api/internal/entity"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-observabilidade/orchestrator-api/internal/entity"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/propagation"

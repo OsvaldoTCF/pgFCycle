@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run/internal/infra/repo"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run/internal/infra/web"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run/internal/infra/web/webserver"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafios/cloud-run/internal/infra/repo"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafios/cloud-run/internal/infra/web"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafios/cloud-run/internal/infra/web/webserver"
 )
 
 func ConfigureServer() *webserver.WebServer {

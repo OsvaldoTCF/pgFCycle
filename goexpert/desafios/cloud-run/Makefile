@@ -18,18 +18,18 @@ clean: ## Clean all temp files
 ## ----- BUILD & PUSH
 .PHONY: build
 build: ## Build the container image
-	@docker build -t gcr.io/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run:v1 .
+	@docker build -t us-east1-docker.pkg.dev/goexpert-462214/desafios/cloud-run:v1 .
 
 .PHONY: push
 push: ## Push the container image to image registry
-	@docker push gcr.io/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run:v1
+	@docker push us-east1-docker.pkg.dev/goexpert-462214/desafios/cloud-run:v1
 
 
 
 ## ----- COMPOSE
 .PHONY: up
 up: ## Put the compose containers up
-	@docker-compose up -d --build
+	@docker compose up -d --build
 
 .PHONY: down
 down: ## Put the compose containers down
@@ -45,9 +45,9 @@ serve: ## Run the server
 
 .PHONY: run
 run: ## Make some requests
-	@echo -n "422: "; curl -s "http://localhost:8080/cep/1234567"
-	@echo -n "404: "; curl -s "http://localhost:8080/cep/12345678"
-	@echo -n "200: "; curl -s "http://localhost:8080/cep/13330250"
+	@echo -n "422: "; curl -s "http://localhost:8080/cep/2345678"
+	@echo -n "404: "; curl -s "http://localhost:8080/cep/68840420"
+	@echo -n "200: "; curl -s "http://localhost:8080/cep/58900000"
 
 .PHONY: test
 test: ## Run the tests

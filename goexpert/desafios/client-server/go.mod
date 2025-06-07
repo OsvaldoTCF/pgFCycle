@@ -1,4 +1,4 @@
-module github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-client-server
+module github.com/osvaldotcf/pgfcycle/goexpert/desafio-client-server
 
 go 1.22.3
 

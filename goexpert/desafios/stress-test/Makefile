@@ -5,7 +5,7 @@ help: ## Show this menu
 
 .PHONY: build
 build: ## Build the container image
-	@docker build -t OsvaldoTCF/pgFCycle/goexpert/desafio-stress-test:v1 .
+	@docker build -t osvaldotcf/pgfcycle/goexpert/desafio-stress-test:v1 .
 
 .PHONY: run
 run: ## Run the code locally
@@ -14,4 +14,4 @@ run: ## Run the code locally
 
 .PHONY: runc
 runc: ## Run the app via docker
-	@docker run OsvaldoTCF/pgFCycle/goexpert/desafio-stress-test:v1 --url=https://google.com --requests=10 --concurrency=2
+	@docker run osvaldotcf/pgfcycle/goexpert/desafio-stress-test:v1 --url=https://google.com --requests=10 --concurrency=2

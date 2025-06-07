@@ -1,7 +1,7 @@
 package entity
 
 import (
-	entity "github.com/OsvaldoTCF/pgFCycle/goexpert/apis/pkg/entities"
+	entity "github.com/osvaldotcf/pgfcycle/goexpert/apis/pkg/entities"
 	"golang.org/x/crypto/bcrypt"
 )
 

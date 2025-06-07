@@ -11,8 +11,8 @@ O sistema deverá gerar um relatório com informações específicas após a exe
 ## Como rodar o projeto: manual
 
 ```shell
-docker build -t OsvaldoTCF/pgFCycle/goexpert/desafio-stress-test:v1 .
-docker run OsvaldoTCF/pgFCycle/goexpert/desafio-stress-test:v1 -—url=http://google.com -—requests=10 —-concurrency=2
+docker build -t osvaldotcf/pgfcycle/goexpert/desafio-stress-test:v1 .
+docker run osvaldotcf/pgfcycle/goexpert/desafio-stress-test:v1 -—url=http://google.com -—requests=10 —-concurrency=2
 ```
 
 ## Como rodar o projeto: make

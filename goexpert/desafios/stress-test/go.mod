@@ -1,4 +1,4 @@
-module github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-stress-test
+module github.com/osvaldotcf/pgfcycle/goexpert/desafio-stress-test
 
 go 1.22.3
 

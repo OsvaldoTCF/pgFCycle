@@ -1,4 +1,4 @@
-module github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-ratelimiter
+module github.com/osvaldotcf/pgfcycle/goexpert/desafio-ratelimiter
 
 go 1.22.3
 

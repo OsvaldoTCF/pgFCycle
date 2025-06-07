@@ -1,4 +1,4 @@
-module github.com/OsvaldoTCF/pgFCycle/goexpert/banco-de-dados/gorm
+module github.com/osvaldotcf/pgfcycle/goexpert/banco-de-dados/gorm
 
 go 1.22.3
 

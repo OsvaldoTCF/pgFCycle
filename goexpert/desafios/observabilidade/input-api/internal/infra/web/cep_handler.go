@@ -6,10 +6,10 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-observabilidade/configs"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-observabilidade/input-api/internal/entity"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-observabilidade/input-api/internal/infra/repo"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-observabilidade/input-api/internal/usecase"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-observabilidade/configs"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-observabilidade/input-api/internal/entity"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-observabilidade/input-api/internal/infra/repo"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-observabilidade/input-api/internal/usecase"
 	"go.opentelemetry.io/otel/trace"
 )
 

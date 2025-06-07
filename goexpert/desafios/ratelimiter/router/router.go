@@ -2,7 +2,7 @@ package router
 
 import (
 	"github.com/go-chi/chi"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-ratelimiter/limiter"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-ratelimiter/limiter"
 )
 
 func Init() {

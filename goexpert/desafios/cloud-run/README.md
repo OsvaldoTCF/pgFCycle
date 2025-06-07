@@ -33,7 +33,7 @@ cp .env.example .env
 docker-compose down
 
 ## 5. Remover a imagem antiga, se existir
-docker image rm -f gcr.io/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run:v1
+docker image rm -f gcr.io/osvaldotcf/pgfcycle/goexpert/desafios/cloud-run:v1
 
 ## 6. Suba o compose
 docker-compose up -d

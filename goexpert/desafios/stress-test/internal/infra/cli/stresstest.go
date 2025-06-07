@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-stress-test/internal/infra/repo"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-stress-test/internal/usecase"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-stress-test/internal/infra/repo"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafio-stress-test/internal/usecase"
 	"github.com/spf13/cobra"
 )
 

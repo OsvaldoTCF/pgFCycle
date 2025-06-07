@@ -1,6 +1,6 @@
 package graph
 
-import "github.com/OsvaldoTCF/pgFCycle/goexpert/graphql/internal/database"
+import "github.com/osvaldotcf/pgfcycle/goexpert/graphql/internal/database"
 
 // This file will not be regenerated automatically.
 //

@@ -21,7 +21,7 @@ test: ## Run unit-tests
 
 .PHONY: build
 build: ## Build the container image
-	@docker build -t OsvaldoTCF/pgFCycle/goexpert/desafio-ratelimiter:dev -f Dockerfile .
+	@docker build -t osvaldotcf/pgfcycle/goexpert/desafio-ratelimiter:dev -f Dockerfile .
 
 .PHONY: up
 up: ## Put the compose containers up

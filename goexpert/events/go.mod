@@ -1,4 +1,4 @@
-module github.com/OsvaldoTCF/pgFCycle/goexpert/events
+module github.com/osvaldotcf/pgfcycle/goexpert/events
 
 go 1.22.3
 

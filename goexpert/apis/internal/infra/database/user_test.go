@@ -3,7 +3,7 @@ package database
 import (
 	"testing"
 
-	entity "github.com/OsvaldoTCF/pgFCycle/goexpert/apis/internal/entities"
+	entity "github.com/osvaldotcf/pgfcycle/goexpert/apis/internal/entities"
 	"github.com/stretchr/testify/assert"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"

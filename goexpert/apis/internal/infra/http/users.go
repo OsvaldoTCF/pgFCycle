@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/go-chi/jwtauth"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/apis/internal/dto"
-	entity "github.com/OsvaldoTCF/pgFCycle/goexpert/apis/internal/entities"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/apis/internal/infra/database"
+	"github.com/osvaldotcf/pgfcycle/goexpert/apis/internal/dto"
+	entity "github.com/osvaldotcf/pgfcycle/goexpert/apis/internal/entities"
+	"github.com/osvaldotcf/pgfcycle/goexpert/apis/internal/infra/database"
 )
 
 type Error struct {

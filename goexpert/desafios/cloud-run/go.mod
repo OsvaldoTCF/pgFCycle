@@ -1,4 +1,4 @@
-module github.com/OsvaldoTCF/pgFCycle/goexpert/cloud-run
+module github.com/osvaldotcf/pgfcycle/goexpert/desafios/cloud-run
 
 go 1.22.3
 

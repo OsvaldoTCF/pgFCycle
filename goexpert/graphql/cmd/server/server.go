@@ -2,14 +2,14 @@ package main
 
 import (
 	"database/sql"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/graphql/internal/database"
+	"github.com/osvaldotcf/pgfcycle/goexpert/graphql/internal/database"
 	"log"
 	"net/http"
 	"os"
 
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/playground"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/graphql/graph"
+	"github.com/osvaldotcf/pgfcycle/goexpert/graphql/graph"
 	
 	_ "github.com/mattn/go-sqlite3"
 )

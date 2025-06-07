@@ -1,4 +1,4 @@
-module github.com/OsvaldoTCF/pgFCycle/goexpert/banco-de-dados/crud-introduction
+module github.com/osvaldotcf/pgfcycle/goexpert/banco-de-dados/crud-introduction
 
 go 1.22.3
 

@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run/internal/infra/repo"
-	"github.com/OsvaldoTCF/pgFCycle/goexpert/desafio-cloud-run/internal/usecase"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafios/cloud-run/internal/infra/repo"
+	"github.com/osvaldotcf/pgfcycle/goexpert/desafios/cloud-run/internal/usecase"
 	"github.com/stretchr/testify/assert"
 )
 

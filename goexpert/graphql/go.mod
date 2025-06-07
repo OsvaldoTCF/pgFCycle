@@ -1,4 +1,4 @@
-module github.com/OsvaldoTCF/pgFCycle/goexpert/graphql
+module github.com/osvaldotcf/pgfcycle/goexpert/graphql
 
 go 1.22.5
 
