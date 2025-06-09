@@ -24,6 +24,9 @@ build: ## Build the container image
 push: ## Push the container image to image registry
 	@docker push us-east1-docker.pkg.dev/goexpert-462214/desafios/cloud-run:v1
 
+.PHONY: deploy
+deploy: ## Deploy
+	@gcloud run deploy cloud-run --project goexpert-462214 --image us-east1-docker.pkg.dev/goexpert-462214/desafios/cloud-run:v1 --platform managed --region us-east1
 
 
 ## ----- COMPOSE
@@ -33,7 +36,7 @@ up: ## Put the compose containers up
 
 .PHONY: down
 down: ## Put the compose containers down
-	@docker-compose down
+	@docker compose down
 
 
 
