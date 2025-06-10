@@ -2,6 +2,11 @@
 
 Projeto do Laboratório "Deploy com Cloud Run" do treinamento GoExpert(FullCycle).
 
+Para acesso funcional: 
+- https://cloud-run-334659898990.us-east1.run.app/cep/5890000
+- https://cloud-run-334659898990.us-east1.run.app/cep/58900001 
+- https://cloud-run-334659898990.us-east1.run.app/cep/58900000
+
 ## O desafio
 
 Desenvolver um sistema em Go que receba um CEP, identifica a cidade e retorna o clima atual (temperatura em graus celsius, fahrenheit e kelvin). Esse sistema deverá ser publicado no Google Cloud Run.

@@ -15,7 +15,11 @@ clean: ## Clean all temp files
 
 
 
-## ----- BUILD & PUSH
+## ----- BUILD & PUSH & DEPLOY
+.PHONY: all
+all: build push deploy
+
+
 .PHONY: build
 build: ## Build the container image
 	@docker build -t us-east1-docker.pkg.dev/goexpert-462214/desafios/cloud-run:v1 .
@@ -27,6 +31,7 @@ push: ## Push the container image to image registry
 .PHONY: deploy
 deploy: ## Deploy
 	@gcloud run deploy cloud-run --project goexpert-462214 --image us-east1-docker.pkg.dev/goexpert-462214/desafios/cloud-run:v1 --platform managed --region us-east1
+
 
 
 ## ----- COMPOSE
