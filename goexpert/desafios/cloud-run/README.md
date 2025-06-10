@@ -17,11 +17,21 @@ Desenvolver um sistema em Go que receba um CEP, identifica a cidade e retorna o 
 # build the container image
 make build
 
-# push the container image and deploy to GCP Cloud Run
+# push the container image 
+make push
+
+# deploy to GCP Cloud Run
 make deploy
 
-# run locally
+# run build, push and deploy
+make all
+
+# run container locally
+make up
+
+# run test locally
 make run
+
 ```
 
 ## Como rodar o projeto: manual
