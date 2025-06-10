@@ -11,7 +11,10 @@ Para acesso funcional:
 OPEN_WEATHERMAP_API_KEY=
 Desenvolver um sistema em Go que receba um CEP, identifica a cidade e retorna o clima atual (temperatura em graus celsius, fahrenheit e kelvin). Esse sistema deverá ser publicado no Google Cloud Run.
 
-## Como rodar o projeto: make
+
+## Como rodar o projeto usando o comand make:
+
+# Em Dockerfile deve ser colocada a variável de ambiente
 
 ```shell
 # build the container image
