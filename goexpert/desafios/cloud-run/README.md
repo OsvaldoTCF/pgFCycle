@@ -8,7 +8,7 @@ Para acesso funcional:
 - https://cloud-run-334659898990.us-east1.run.app/cep/58900000
 
 ## O desafio
-
+OPEN_WEATHERMAP_API_KEY=
 Desenvolver um sistema em Go que receba um CEP, identifica a cidade e retorna o clima atual (temperatura em graus celsius, fahrenheit e kelvin). Esse sistema deverá ser publicado no Google Cloud Run.
 
 ## Como rodar o projeto: make
@@ -48,6 +48,10 @@ docker-compose up -d
 echo -n "422: "; curl -s "http://localhost:8080/cep/1234567"
 echo -n "404: "; curl -s "http://localhost:8080/cep/12345678"
 echo -n "200: "; curl -s "http://localhost:8080/cep/13330250"
+
+# Observação: Em Dockerfile e .env deve ser colocada a variável de ambiente OPEN_WEATHERMAP_API_KEY=
+
+
 ```
 
 ## Funcionalidades da Linguagem Utilizadas
