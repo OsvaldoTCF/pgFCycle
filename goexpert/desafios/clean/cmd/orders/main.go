@@ -29,7 +29,10 @@ func main() {
 	}
 
 	// ----- DATABASE
-	db, err := sql.Open(configs.DBDriver, fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", configs.DBUser, configs.DBPassword, configs.DBHost, configs.DBPort, configs.DBName))
+	dbcon := fmt.Sprintf("postgres://%s:%s@%s:%s/%s?sslmode=disable", configs.DBUser, configs.DBPassword,
+		configs.DBHost, configs.DBPort, configs.DBName)
+	fmt.Println("DBCON: " + dbcon)
+	db, err := sql.Open(configs.DBDriver, dbcon)
 
 	//sql.Open("postgres", "postgres://pgclean:1010aa@pgclean-host/pgcleandb?sslmode=disable")
 	if err != nil {
