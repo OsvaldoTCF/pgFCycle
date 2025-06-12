@@ -1,0 +1,66 @@
+
+networks:
+       goexpert:
+
+services:
+      pgclean:
+            container_name: pgclean_postgres
+            image: postgres:15
+            hostname: pgclean-host
+            networks:
+                  - goexpert
+            restart: always
+            environment:
+                  - POSTGRES_USER=dbadmin
+                  - POSTGRES_PASSWORD=1010aa
+                  - APP_DB_USER=pgclean
+                  - APP_DB_PASS=1010aa
+                  - APP_DB_NAME=pgcleandb
+            ports: 
+                  - 5432:5432
+            volumes:
+                  - ./dataset:/docker-entrypoint-initdb.d
+
+      rabbitmq:
+            hostname: rabbitmq-host
+            container_name: rabbitmq
+            restart: always
+            image: rabbitmq:3.12.14-management-alpine
+            networks:
+                  - goexpert
+            ports:
+                  - 5672:5672
+                  - 15672:15672
+                  - 15692:15692
+            environment:
+                  RABBITMQ_DEFAULT_USER: guest
+                  RABBITMQ_DEFAULT_PASS: guest
+            healthcheck:
+                  test: rabbitmq-diagnostics -q ping
+                  start_period: 10s
+                  interval: 30s
+                  timeout: 10s
+                  retries: 3
+
+      app:
+            container_name: app_server_apis
+            hostname: app-host
+            build:
+                  context: .
+                  dockerfile: Dockerfile
+            restart: on-failure
+            depends_on:
+                  pgclean:
+                        condition: service_started
+                        restart: true
+                  rabbitmq:
+                        condition: service_started
+                        restart: true
+            env_file:
+                  - ./.env
+            networks:
+                  - goexpert
+            ports:
+                  - 8080:8080 # REST
+                  - 8081:8081 # GRAPHQL
+                  - 8082:8082 # GRPC

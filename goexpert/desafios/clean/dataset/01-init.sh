@@ -1,0 +1,22 @@
+#!/bin/bash
+set -e
+export PGPASSWORD=$POSTGRES_PASSWORD;
+psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
+  CREATE USER $APP_DB_USER WITH ENCRYPTED PASSWORD '$APP_DB_PASS';
+  CREATE DATABASE $APP_DB_NAME;
+  GRANT ALL PRIVILEGES ON DATABASE $APP_DB_NAME TO $APP_DB_USER;
+    \connect $APP_DB_NAME
+  BEGIN;
+    CREATE EXTENSION pgcrypto;
+    ALTER SCHEMA public OWNER TO $APP_DB_USER;
+    GRANT ALL PRIVILEGES ON schema public TO $APP_DB_USER;
+    CREATE TABLE orders (
+    id varchar(255) NOT NULL, 
+    price float NOT NULL, 
+    tax float NOT NULL, 
+    final_price float NOT NULL, 
+    PRIMARY KEY (id));
+    GRANT ALL PRIVILEGES ON TABLE orders TO $APP_DB_USER;
+
+  COMMIT;
+EOSQL
