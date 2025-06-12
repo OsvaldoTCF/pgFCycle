@@ -1,11 +1,11 @@
 # syntax=docker/dockerfile:1
-FROM golang:1.24-alpine3.22 as base
+FROM golang:1.22.0-alpine3.19 as base
 
 
 
 # ---------- ENVS
 ENV DOCKER_CONTENT_TRUST=1
-ENV OPEN_WEATHERMAP_API_KEY=
+
 
 
 # ---------- BUILD
